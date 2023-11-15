@@ -7,7 +7,7 @@
 :root {
     --cor-destaque: #4FBF44;
     --cor-texto: #606060;
-    --cor-degrade01: #D1E111;
+    --cor-degrade01: #bdce03;
     --cor-degrade02: #418301;
     --cor-menu-items: #808080;
 
@@ -54,9 +54,8 @@ main {
     margin: 0 auto;
 }
 
-#introducao {
+section#introducao {
     display: flex;
-    /* background-color: gray; */
     margin: 50px 100px;
 }
 
@@ -65,40 +64,87 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* margin: 50px 60px; */
-    /* background-color: green; */
 }
 
 #introducao img {
-    /* background-color: yellow; */
     margin-right: 100px;
 }
 
-.content {
+.about-ben {
     display: flex;
     flex-direction: column;
 }
 
-.content h1 {
+.about-ben h1 {
     font-size: 2.2em;
 }
 
-.content h3 {
+.about-ben h3 {
     font-size: 1.5em;
     font-style: italic;
     font-weight: normal;
     margin-bottom: 30px;
 }
 
-.content h1, h3 {
+.about-ben h1, h3 {
     align-self: flex-start;
     color: var(--cor-destaque);
 }
 
-.content p {
+.about-ben p {
     font-size: 1.25em;
-    /* font-size: 20px; */
     text-align: justify;
     color: var(--cor-texto);
 }
 
+section#omnitrix-info {
+    text-align: center;
+    background-image: linear-gradient(to bottom, var(--cor-degrade01), var(--cor-degrade02));
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+#omnitrix-info h1 {
+    font-size: 2.25em;
+    color: white;
+}
+
+#omnitrix-info h2 {
+    margin-top: 80px;
+    margin-left: 150px;
+    text-align: justify;
+    font-size: 1.5em;
+    color: white;
+}
+
+.about-omnitrix {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px 100px;
+}
+
+.about-omnitrix #omnitrix-img {
+    width: 371px;
+    margin-right: 70px;
+}
+
+.about-omnitrix p {
+    font-size: 1.25em;
+    text-align: justify;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.about-omnitrix ul {
+    list-style-position: inside;
+    font-size: 1.25em;
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 80px;
+}
+
+.about-omnitrix ul li {
+    margin-bottom: 30px;
+    color: white;
+}
