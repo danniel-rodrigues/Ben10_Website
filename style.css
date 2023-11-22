@@ -10,6 +10,7 @@
     --cor-degrade01: #bdce03;
     --cor-degrade02: #418301;
     --cor-menu-items: #808080;
+    --cor-header: #1d1d1d;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-conteudo: 'Montserrat', sans-serif;
@@ -22,6 +23,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 60px;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -29,6 +35,21 @@ header {
     width: 100%;
     height: 120px;
     border-bottom: 1px solid #E6E6E6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+header.scroll {
+    height: 60px;
+    background-color: var(--cor-header);
+    border: none;
+    z-index: 1;
+}
+
+header.scroll img {
+    width: 50px;
 }
 
 header > img {
@@ -47,18 +68,22 @@ header nav a {
     font-family: var(--fonte-menu);
     font-size: 2em;
     margin-right: 100px;
+    transition: .5s;
+}
+
+header nav a.ativo, header nav a:hover {
+    color: var(--cor-destaque);
 }
 
 main {
     font-family: var(--fonte-conteudo);
-    margin: 0 auto;
 }
 
 section#introducao {
     display: flex;
+    padding-top: 120px;
     margin: 50px 100px;
 }
-
 
 #introducao div{
     display: flex;
@@ -302,6 +327,15 @@ footer p {
     text-align: center;
     font-weight: bold;
     color: rgb(160, 160, 160);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--cor-texto);
+    border-radius: 10px;
 }
 
 .manual-navigation {
