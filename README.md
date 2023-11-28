@@ -10,3 +10,11 @@ pela primeira vez, até as demais séries subsequentes:
   * Ben 10: Alien Force
   * Ben 10: Ultimate Alien
   * Ben 10: Omniverse
+
+## Acesse o link e teste o projeto:
+Veja o projeto pronto: https://danniel-rodrigues.github.io/Ben10_Website/
+
+## Tecnologias utilizadas:
+ * HTML5
+ * CSS3
+ * Javascript
