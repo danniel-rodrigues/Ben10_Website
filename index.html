@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate-on-scroll.css">
     <title>Ben 10 - Website</title>
 </head>
 <body>
@@ -19,8 +20,8 @@
     <main>
         <section id="introducao">
             <div>
-                <img src="images/ben_gwen_max.png" alt="Ben, Gwen e vovô Max juntos">
-                <div class="about-ben">
+                <img src="images/ben_gwen_max.png" class="animate from-left" alt="Ben, Gwen e vovô Max juntos">
+                <div class="about-ben animate from-right">
                     <h1>BENJAMIN TENNYSON (BEN)</h1>
                     <h3>“Hora do herói!”</h3>
                     <p>Aos 10 anos de idade, Benjamin Kirby Tennyson descobre um dispositivo alienígena na floresta chamado de Omnitrix, que lhe permite se transformar em 10 diferentes espécies alienígenas. Ao longo de suas férias de verão, viajando o país num trailer com seu avô Max e com a sua prima Gwen, Ben luta contra o crime e alienígenas do mal com seus novos poderes.</p>
@@ -28,27 +29,27 @@
             </div>
         </section>
         <section id="omnitrix-info">
-            <h1>OMNITRIX (O PROTÓTIPO)</h1>
+            <h1 class="animate">OMNITRIX (O PROTÓTIPO)</h1>
             <div class="about-omnitrix">
-                <img src="images/omnitrix_prototype.png" alt="Omnitrix Prorótipo" id="omnitrix-img">
-                <div>
+                <img src="images/omnitrix_prototype.png" id="omnitrix-img" class="animate from-left" alt="Omnitrix Prorótipo">
+                <div class="animate from-right">
                     <p>O <strong>protótipo do Omnitrix</strong>, referido somente como Omnitrix, era um dispositivo em forma de relógio que foi ligado ao pulso e ao DNA de Ben, e é o dispositivo que a série e franquia girava em torno.</p>
                     <p>O Omnitrix foi criado por Azmuth para ser um instrumento pacífico, em um ato de arrependimento após a destruição causada por sua criação anterior, Ascalon, uma arma de terrível poder.</p>
                 </div>
             </div>
-            <h2>Foi criado com as seguintes intenções:</h2>
-            <div class="about-omnitrix">
+            <h2 class="animate">Foi criado com as seguintes intenções:</h2>
+            <div class="about-omnitrix animate from-left">
                 <ul>
                     <li>Promover o entendimento interespécie, permitindo que outros seres tenham a experiência de serem diferentes formas de vida.</li>
                     <li>Repositório para o DNA de mais de um milhão de diferentes espécies sapientes, preservando-as, para evitar a extinção.</li>
                     <li>Azmuth esperava que sua namorada distante, Xeneth, que o havia deixado porque ele criou a Ascalon, visse que ele mudou.</li>
                 </ul>
-                <img src="images/azmuth.webp" alt="Azmuth">
+                <img src="images/azmuth.webp" class="animate" alt="Azmuth">
             </div>
         </section>
         <section id="aliens-omnitrix">
-            <h1>OS ALIENS DO OMNITRIX</h1>
-            <div class="slider">
+            <h1 class="animate">OS ALIENS DO OMNITRIX</h1>
+            <div class="slider animate">
                 <div class="slides">
                     <!--Radio Buttons-->
                     <input type="radio" name="radio-btn" id="radio1">
@@ -285,26 +286,26 @@
         </section>
 
         <section id="ben10-series">
-            <h1>SÉRIES DO BEN 10</h1>
+            <h1 class="animate">SÉRIES DO BEN 10</h1>
             <div class="container">
-                <img id="img-alienForce" src="images/Ben10-AlienForce.png" alt="Ben 10 - Alien Force">
-                <div>
+                <img id="img-alienForce" class="animate from-left" src="images/Ben10-AlienForce.png" alt="Ben 10 - Alien Force">
+                <div class="animate from-right">
                     <h2>Ben 10: Alien Force</h2>
                     <p>Com 15 anos de idade, Ben Tennyson voltou a ter uma vida cotidiana e normal. Quando a atividade alienígena parou de se manifestar em quantidade ameaçadora, Ben retirou o Omnitrix. Mas quando Max desaparece misteriosamente, Ben volta a usar o Omnitrix afim de deter novos inimigos e procurá-lo com a ajuda de Gwen e Kevin. Ao mesmo tempo, com ajuda de filhos de Encanadores evitam os ataques dos DNAliens e dos Soberanos.</p>
                 </div>
             </div>
 
             <div class="container">
-                <div>
+                <div class="animate from-left">
                     <h2>Ben 10: Ultimate Alien</h2>
                     <p>A identidade secreta de Ben foi revelada ao mundo e ele é agora um super-herói internacional. Armado com um Omnitrix poderoso chamado Superomnitrix, Ben enfrentará a caça de ameaças alienígenas desonestas, mercenários humanos e assassinos contratados por adultos adversários. Ben estará em lugares onde nunca esteve antes; como a Forja da Criação.</p>
                 </div>
-                <img id="img-ultimateAlien" src="images/Ben10-UltimateAlien.png" alt="Ben 10 - Ultimate Alien">
+                <img id="img-ultimateAlien" class="animate from-right" src="images/Ben10-UltimateAlien.png" alt="Ben 10 - Ultimate Alien">
             </div>
 
             <div class="container">
-                <img id="img-omniverse" src="images/Ben10-Omniverse.png" alt="Ben 10 - Omniverse">
-                <div>
+                <img id="img-omniverse" class="animate from-left" src="images/Ben10-Omniverse.png" alt="Ben 10 - Omniverse">
+                <div class="animate from-right">
                     <h2>Ben 10: Omniverse</h2>
                     <p>Ben estava pronto para ser um herói solo com seu novo Omnitrix depois que Gwen e Kevin partiram para a faculdade, mas o vovô Max o juntou a um parceiro novato e de acordo com as regras. Juntos, eles exploram uma cidade alienígena secreta, conhecida como Undertown, abaixo da cidade de Bellwood. Enquanto isso, um caçador misterioso, conhecido como Khyber, está de olho em Ben!</p>
                 </div>
@@ -312,7 +313,7 @@
         </section>
     </main>
     <footer>
-        <p>Desenvolvido por Daniel Rodrigues</p>
+        <p>Desenvolvido por <a href="https://github.com/danniel-rodrigues">Daniel Rodrigues</a></p>
     </footer>
 
     <script src="script.js"></script>

@@ -18,9 +18,6 @@ itemMenu.forEach(item => {
     })
 })
 
-
-
-
 setInterval(function() {
     nextSlide();
 }, 10000)
@@ -31,3 +28,16 @@ function nextSlide() {
 
     document.getElementById("radio"+count).checked = true;
 }
+
+
+// Através do Intersect Observer oberva os elementos que surgem na tela e atribui as animações
+const intresectObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        entry.target.classList.toggle('show', entry.isIntersecting)
+    })
+})
+
+const elements = document.querySelectorAll('.animate')
+elements.forEach(el => {
+    intresectObserver.observe(el)
+})
